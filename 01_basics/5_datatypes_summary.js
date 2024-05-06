@@ -25,9 +25,9 @@ const anotherId = Symbol('123')
 
 // //? Array, Objects, Functions
 
-// const heros = ["Rana", "Vikram", "Sinha"]; //* Array
-// console.log(heros);
-// console.log(typeof heros);
+const heros = ["Rana", "Vikram", "Sinha"]; //* Array
+console.log(heros);
+console.log(typeof heros); //* Object
 
 // let myObj = {
 //     name: "Rana Vikram Sinha",

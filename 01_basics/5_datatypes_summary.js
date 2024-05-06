@@ -32,8 +32,14 @@ console.log(typeof heros);
 let myObj = {
     name: "Rana Vikram Sinha",
     age: 22,
+    happy: false,
+    life: undefined,
 }
 console.log(myObj);
+console.log(typeof myObj.name);
+console.log(typeof myObj.age);
+console.log(typeof myObj.happy);
+console.log(typeof myObj.life);
 console.log(typeof myObj);
 
 const myFunction = function(){

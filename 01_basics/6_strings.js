@@ -35,6 +35,8 @@ console.log(str5.trim()) //* trim also has trimStart() and trimEnd()
 const strObj = new String("Boy")
 console.log(strObj)
 console.log(strObj.toString())
+console.log(strObj)
+console.log(strObj.valueOf()) //* toString() and valueOf (do the same thing) methods of String values returns this string value
 
 const websiteUrl = "https://Rana%20Vikram%20Sinha"
 console.log(websiteUrl)
@@ -46,3 +48,11 @@ console.log(websiteUrl.includes("Raja"))
 
 console.log(str1.split(" ")) //* split on bases of space and converts into array
 console.log(typeof str1.split(" ")) //* Object
+
+console.log(str1.startsWith("Rana"))
+console.log(str1.startsWith("Vikram"))
+console.log(str1.startsWith("Rana",0))
+console.log(str1.startsWith("Rana",1))
+console.log(str1.startsWith("Vikram",5))
+
+console.log(str1.repeat(5))

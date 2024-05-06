@@ -44,4 +44,5 @@ console.log(websiteUrl.includes("Rana"))
 console.log(websiteUrl.includes("%20"))
 console.log(websiteUrl.includes("Raja"))
 
-console.log(typeof str1.split(" ")) //* split on bases of space and converts into array
+console.log(str1.split(" ")) //* split on bases of space and converts into array
+console.log(typeof str1.split(" ")) //* Object

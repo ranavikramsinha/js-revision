@@ -85,6 +85,7 @@ console.log(name2.concat(name1))
 console.log(name2.concat("+",name1))
 
 const icons = "😊😂🤣"
+console.log(typeof icons)
 console.log(icons.codePointAt(1))
 console.log(icons.codePointAt(2))
 console.log(icons.codePointAt(3)) //* print unicode number of icon 🤣(56834)

@@ -1,4 +1,4 @@
-//* NOTE => new Date() - creates a Date object representing the current date/time • Date.now() - returns the number of milliseconds since midnight 01 January, 1970 UTC
+//* NOTE => new Date() - creates a Date object representing the current date/time • Date.now() - returns the number of milliseconds since midnight 01 January, 1970 UTC.
 
 
 console.log(Date.now())

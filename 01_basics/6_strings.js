@@ -35,8 +35,10 @@ console.log(str5.trim()) //* trim also has trimStart() and trimEnd()
 const strObj = new String("Boy")
 console.log(strObj)
 console.log(strObj.toString())
+console.log(typeof strObj.toString())
 console.log(strObj)
-console.log(strObj.valueOf()) //* toString() and valueOf (do the same thing) methods of String values returns this string value
+console.log(typeof strObj)
+console.log(typeof strObj.valueOf()) //* toString() and valueOf (do the same thing) methods of String values returns this string value
 
 const websiteUrl = "https://Rana%20Vikram%20Sinha"
 console.log(websiteUrl)

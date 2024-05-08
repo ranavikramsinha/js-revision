@@ -40,3 +40,9 @@ console.log(typeof newDate1.getTime())
 console.log(Date.now())
 console.log(Date.now()/1000)
 console.log(Math.floor(Date.now()/1000))
+
+console.log(`Date is ${nowDate.getDate()} and the time is ${nowDate.toLocaleTimeString()}`)
+
+console.log(nowDate.toLocaleString('default', {
+    weekday: "long",
+}))

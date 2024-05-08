@@ -45,4 +45,19 @@ console.log(`Date is ${nowDate.getDate()} and the time is ${nowDate.toLocaleTime
 
 console.log(nowDate.toLocaleString('default', {
     weekday: "long",
+    month: "numeric",
+    hour: "2-digit",
+}))
+
+console.log(nowDate.toLocaleString('fr-FR', {
+    weekday: "long",
+    month: "numeric",
+    hour: "2-digit"
+}))
+
+console.log(nowDate.toLocaleTimeString('default', {
+    weekday: "short",
+}))
+console.log(nowDate.toLocaleDateString('default', {
+    weekday: "narrow",
 }))

@@ -64,7 +64,7 @@ const arr5 = new Array("Rana","Vikram","Sinha","Raja","Babu")
 // console.log(arr8)
 // console.log(arr5) //* after using splice, our original arr5 does get manipulate
 
-// const arr8 = arr5.splice(2) //* prints all the elements of an array from index 2 position 
+// const arr8 = arr5.splice(2) //* prints all the elements from index 2 position of an array
 // console.log(arr8)
 // console.log(arr5) //* after using splice, our original arr5 does get manipulate
 

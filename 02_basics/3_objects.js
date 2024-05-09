@@ -1,6 +1,6 @@
 //* Object declares into two types, 1st: Singleton and 2nd: Object literals
-//* Singleton: Object.create
-//* Object literals: const obj={}
+//* Singleton: Object.create , const obj1 = new Object()
+//* Object literals: const obj = {}
 
 const sym1 = Symbol("Aryan")
 console.log(sym1)

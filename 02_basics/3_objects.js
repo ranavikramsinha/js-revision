@@ -30,14 +30,14 @@ console.log(typeof obj1[sym1])
 // obj1.location = "Delhi"
 // console.log(obj1.location) //* After freezing the object, keys values can't be changed of an object
 
-obj1.name1 = function(){
+obj1.hello1 = function(){
     console.log("Hello Raja Babu")
 }
 
-console.log(obj1.name1())
+console.log(obj1.hello1())
 
-obj1.name2 = function(){
+obj1.hello2 = function(){
     console.log(`Hello ${this.name}`)
 }
 
-console.log(obj1.name2())
+console.log(obj1.hello2())

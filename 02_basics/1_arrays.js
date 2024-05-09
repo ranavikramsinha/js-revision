@@ -50,7 +50,7 @@
 // const arr7 = arr5.slice(1, 3) //* prints from index 1 position to index 2 position
 // console.log(arr7)
 // console.log(arr5.slice(2))
-// console.log(arr5.slice(-2)) //* prints from the last index 0
+// console.log(arr5.slice(-2)) //* prints from the last index (backward direction)
 // console.log(arr5.slice(0, -2)) //* (-2) not include last 2 elements of an array in this scenario
 // console.log(arr5.slice(0, 4)) //* prints from index 0 position to index 3 position
 // console.log(arr5) //* after using slice, our original arr5 doesn't get manipulate

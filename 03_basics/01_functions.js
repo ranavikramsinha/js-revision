@@ -23,3 +23,30 @@ function addNumbers(num1, num2){ //* this function returns the added value
 const addValue = addNumbers(5,5)
 console.log(addValue) //* 10 because addNumbers function returns an added value and then storing the value in addValue
 
+function user1(username){
+    return `${username} is available`
+}
+
+console.log(user1())
+console.log(user1("Raja Babu"))
+
+const name1 = user1("Rana Vikram Sinha")
+console.log(name1)
+
+function user2 (username){
+    if(!username){
+        console.log("Invalid input, Please enter the valid username")
+        return
+    }
+
+    return `${username} is available`
+}
+
+console.log(user2())
+console.log(user2("Aryan Sinha"))
+
+const name2 = user2("Alice")
+console.log(name2)
+
+const name3 = user2()
+console.log(name3)

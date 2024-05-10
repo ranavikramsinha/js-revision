@@ -40,8 +40,8 @@ function passingObjectInFunction2(getObject){
     return `${getObject.name} lives in ${getObject.location}`
 }
 
-const takingPassingObjectInFunction = passingObjectInFunction2(user2)
-console.log(takingPassingObjectInFunction)
+const takingReturnValueOfPassingObjectInFunction = passingObjectInFunction2(user2)
+console.log(takingReturnValueOfPassingObjectInFunction)
 
 const user3 = {
     name: "Aryan Sinha",

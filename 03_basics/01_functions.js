@@ -48,5 +48,14 @@ console.log(user2("Aryan Sinha"))
 const name2 = user2("Alice")
 console.log(name2)
 
-const name3 = user2()
+function user3 (username = "Pankaj"){
+    if(!username){
+        console.log("Invalid input, Please enter the valid username")
+        return
+    }
+
+    return `${username} is available`
+}
+
+const name3 = user3()
 console.log(name3)

@@ -53,3 +53,22 @@ function passingObjectInFunction3(getObject){
 }
 
 passingObjectInFunction3(user3)
+
+
+const arr1 = [100, 200, 300, 400, 500]
+
+function passingArrayValuesInFunction1(getArray){
+    return getArray[2]
+}
+
+console.log(passingArrayValuesInFunction1(arr1))
+console.log(passingArrayValuesInFunction1([600, 700, 800, 900, 1000]))
+
+const arr2 = [11111, 22222, 33333, 44444, 55555]
+
+function passingArrayValuesInFunction2(getArray){
+    return getArray[0]
+}
+
+const takingPassingArrayValuesInFunction2 = passingArrayValuesInFunction2(arr2)
+console.log(takingPassingArrayValuesInFunction2)

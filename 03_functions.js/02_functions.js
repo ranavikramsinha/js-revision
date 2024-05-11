@@ -72,3 +72,6 @@ function passingArrayValuesInFunction2(getArray){
 
 const takingPassingArrayValuesInFunction2 = passingArrayValuesInFunction2(arr2)
 console.log(takingPassingArrayValuesInFunction2)
+
+const takingPassingArrayValuesInFunction3 = passingArrayValuesInFunction2([123, 456, 789, 234, 567])
+console.log(takingPassingArrayValuesInFunction3)

@@ -59,3 +59,26 @@ if(true){
 // console.log(firstName) //* Error due to block scope rule
 // console.log(lastName) //* Error due to block scope rule
 
+
+
+//********************************* function initialization rules ********************************
+
+console.log(val1(55))
+
+function val1(val){
+    return val*2
+}
+
+
+const val2 = function val2(val){
+    return val/2
+}
+
+console.log(val2(22)) //* access val2 after initialization
+
+
+// console.log(val3(8)) //* Error, cannot access 'val3' before initialization
+
+// const val3 = function val3(val){
+//     return val-1
+// }

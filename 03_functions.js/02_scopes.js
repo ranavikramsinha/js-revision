@@ -44,3 +44,18 @@ function functionOne(){
 }
 
 functionOne()
+
+if(true){
+    const firstName = "Raja"
+
+    if(true){
+        const lastName = " Babu"
+        console.log(firstName + lastName)
+    }
+
+    // console.log(firstName + lastName) //* this throws an error due to lastName variable is not available in 1st if block scope (block scope rule)
+}
+
+// console.log(firstName) //* Error due to block scope rule
+// console.log(lastName) //* Error due to block scope rule
+

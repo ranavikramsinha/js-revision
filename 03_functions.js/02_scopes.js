@@ -1,54 +1,24 @@
-// var c = 700
-let a = 70
+const val1 = 11
+let val2 = 22
+var val3 = 33
 
-if(true){
-    let a = 10
-    const b = 20
-    // console.log("INNER: ", a)
-    // var c = 30 // don't use var
-    // c = 30
+console.log(val1)
+console.log(val2)
+console.log(val3)
+
+if (true){
+    const val1 = 111
+    let val2 = 222
+    var val3 = 333 //* var doesn't follow scope rule, it changes all var declared variable values with new value around the global
+
+    console.log(val1)
+    console.log(val2)
+    console.log(val3)
+
+    val3 = 555 //* this thing also happened so be caution, avoid using var
+    console.log(val3)
 }
 
-// console.log(a);
-// console.log(b);
-// console.log(c);
-
-function one(){
-    const username = "rana"
-
-    function two(){
-        const website = "youtube"
-        console.log(username);
-    }
-    // console.log(website);
-
-    // two()
-}
-
-one()
-
-if(true){
-    const username = "rana"
-    if (username === "rana"){
-        const website = " vikram"
-        // console.log(username + website)
-    }
-    // console.log(website)
-}
-
-// console.log(username)
-
-// +++++++++++++++++++++++ interesting ++++++++++++++++++++++++
-
-console.log(addone(5))
-
-function addone(num){
-    return num + 1
-}
-
-addTwo(10)
-const addTwo = function(num){
-    return num + 2
-}
-
-// addTwo(10)
+console.log(val1)
+console.log(val2)
+console.log(val3)

@@ -59,7 +59,8 @@ user2.getName("What's up?", "Everything Fine!") //* ("What's up?", "Everything F
 
 user2.getName.call(user3, "What are you up to?", "All good!") //* Hello Raja Babu!, "What are you up to?" and "All good!" (value of this = user3)
 
-user2.getName.apply(user4, ["Yoooooooooo,", "All good!"]) //* Here arguments pass in array form
+user2.getName.apply(user4, ["Yoooooooooo,", "All good!"]) //* Here after first argument, all arguments pass in array form
 
-const extractedFunction = user2.getName.bind(user5, "Hmmmmmmmmmmm!", "Okay.")
+const extractedFunction = user2.getName.bind(user5, "Hmmmmmmmmmmm!", "Okay.") //* it gives the copy of a method  which can be used later
 extractedFunction()
+console.log(extractedFunction) //* it gives method (function) of an object user2

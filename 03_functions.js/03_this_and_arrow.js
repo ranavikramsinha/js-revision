@@ -45,11 +45,21 @@ const user3 = {
     age: 27,
 }
 
+const user4 = {
+    fullName: "Rana Vikram Sinha",
+    age: 27,
+}
+
+const user5 = {
+    fullName: "Pankaj Kumar",
+    age: 27,
+}
+
 user2.getName("What's up?", "Everything Fine!") //* ("What's up?", "Everything Fine!") arguments passing to getName function method of an object user2
 
 user2.getName.call(user3, "What are you up to?", "All good!") //* Hello Raja Babu!, "What are you up to?" and "All good!" (value of this = user3)
 
-user2.getName.apply(user3, ["What are you up to?", "All good!"]) //* Here arguments pass in array form
+user2.getName.apply(user4, ["Yoooooooooo,", "All good!"]) //* Here arguments pass in array form
 
-const extractedFunction = user2.getName.bind(user3, "What are you up to?", "All good!")
-console.log(extractedFunction)
+const extractedFunction = user2.getName.bind(user5, "Hmmmmmmmmmmm!", "Okay.")
+extractedFunction()

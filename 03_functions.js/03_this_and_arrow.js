@@ -7,7 +7,7 @@ const user1 = {
 
     asking: function(){ //* Here, asking function is a method of an object user1
         console.log(`${this.userFullName}, How are you doing!`) //* this. use current context
-        console.log(this)
+        // console.log(this) //* it refers to user1 object
     }
 }
 
@@ -29,3 +29,21 @@ x() //* undefined (in strict mode)
 
 //* NOTE => this inside non strict mode - (this substitution), If the value of this keyword is undefined or null, this keyword will be replaced with globalObject ( global(in node.js), window(in browser) ) only in non strict mode
 
+
+//***************** call, apply, bind methods (sharing methods) *******************
+
+const user2 = {
+    fullName: "Aryan Sinha",
+    age: 22,
+    getName: function(){
+        console.log(`Hello ${this.fullName}!`)
+    }
+}
+
+const user3 = {
+    fullName: "Raja Babu",
+    age: 27,
+}
+
+user2.getName()
+user2.getName.call(user3) //* Hello Raja Babu! (value of this = user3)

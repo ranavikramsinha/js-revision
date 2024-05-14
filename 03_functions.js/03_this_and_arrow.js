@@ -35,8 +35,8 @@ x() //* undefined (in strict mode)
 const user2 = {
     fullName: "Aryan Sinha",
     age: 22,
-    getName: function(){
-        console.log(`Hello ${this.fullName}!`)
+    getName: function(argument1, argument2){ //* you can pass many arguments here
+        console.log(`Hello ${this.fullName}! ${argument1} ${argument2}`)
     }
 }
 
@@ -45,5 +45,11 @@ const user3 = {
     age: 27,
 }
 
-user2.getName()
-user2.getName.call(user3) //* Hello Raja Babu! (value of this = user3)
+user2.getName("What's up?", "Everything Fine!") //* ("What's up?", "Everything Fine!") arguments passing to getName function method of an object user2
+
+user2.getName.call(user3, "What are you up to?", "All good!") //* Hello Raja Babu!, "What are you up to?" and "All good!" (value of this = user3)
+
+user2.getName.apply(user3, ["What are you up to?", "All good!"]) //* Here arguments pass in array form
+
+const extractedFunction = user2.getName.bind(user3, "What are you up to?", "All good!")
+console.log(extractedFunction)

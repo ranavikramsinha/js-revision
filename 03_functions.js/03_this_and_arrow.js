@@ -72,12 +72,31 @@ const user6 = {
     name: "Eren",
     y: function (){
         //* enclosing lexical context
-        const arrowfunction = () => {
+        const arrowFunction = () => {
             console.log(this)
             console.log(this.name)
         }
-        arrowfunction()
+        arrowFunction()
     }  
 }
 
 user6.y()
+
+const arrowFunction1 = (val1, val2) => { //* Explicit return
+    return val1 * val2;
+}
+
+console.log(arrowFunction1(3,3))
+
+const arrowFunction2 = (val1, val2) => (val1 / val2) //* Implicit return
+
+console.log(arrowFunction2(3,3))
+
+const arrowFunction3 = () => ({
+    name: "Raja Babu",
+    fun1: function () {
+        console.log(this)
+    }
+})
+
+console.log(arrowFunction3())

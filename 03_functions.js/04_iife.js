@@ -1,9 +1,13 @@
-// Immediately Invoked Function Expressions (IIFE)
+//* Immediately Invoked Function Expressions (IIFE)
+//* => (function(){})();
+//* => ((){})();
+//* => ((parameters){})(arguments);
+//* ; is important to mention for next iife
 
 (function site(){
     // named IIFE
     console.log(`DB CONNECTED`);
-})(); // ; is important to mention for next iife
+})(); //* ; is important to mention for next iife
 
 ( () => {
     console.log(`DB CONNECTED TWO`)

@@ -35,8 +35,8 @@ x() //* undefined (in strict mode)
 const user2 = {
     fullName: "Aryan Sinha",
     age: 22,
-    getName: function(argument1, argument2){ //* you can pass many arguments here
-        console.log(`Hello ${this.fullName}! ${argument1} ${argument2}`)
+    getName: function(parameter1, parameter2){ //* you can pass many arguments here
+        console.log(`Hello ${this.fullName}! ${parameter1} ${parameter2}`)
     }
 }
 

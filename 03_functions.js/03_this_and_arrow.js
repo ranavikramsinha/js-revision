@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 //* this keyword value depends on how the function is called
 const user1 = {
@@ -19,7 +19,7 @@ console.log(this) //* globalObject - global(in node.js), window(in browser)
 
 function x(){
     
-    //* in "use strict" mode, in inside function, console.log(this) will be undefined and the value depends on strict / non strict mode
+    //* in use strict mode, in inside function, console.log(this) will be undefined and the value depends on strict / non strict mode
     
     console.log(this) //*non strict mode => globalObject - global(in node.js), window(in browser)
 }
@@ -61,6 +61,23 @@ user2.getName.call(user3, "What are you up to?", "All good!") //* Hello Raja Bab
 
 user2.getName.apply(user4, ["Yoooooooooo,", "All good!"]) //* Here after first argument, all arguments pass in array form
 
-const extractedFunction = user2.getName.bind(user5, "Hmmmmmmmmmmm!", "Okay.") //* it gives the copy of a method  which can be used later
+const extractedFunction = user2.getName.bind(user5, "Hmmmmmmmmmmm!", "Okay.") //* bind gives the copy of a method  which can be used later
 extractedFunction()
 console.log(extractedFunction) //* it gives method (function) of an object user2
+
+
+//************************* Arrow function ************************
+
+const user6 = {
+    name: "Eren",
+    y: function (){
+        //* enclosing lexical context
+        const arrowfunction = () => {
+            console.log(this)
+            console.log(this.name)
+        }
+        arrowfunction()
+    }  
+}
+
+user6.y()

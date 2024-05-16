@@ -22,3 +22,22 @@ else{
 
 //* <, >, <=, >=, !=, ==, === (also check data types)
 
+
+//************************ Logical Operator's **************************
+
+//* &&(and), ||(or), !(not)
+
+const age = 22
+
+if (age>17 && age<50){
+    console.log("You are an adult")
+}
+else if (age>49){
+    console.log("You are a senior citizen")
+}
+else if (age>10 && age<18){
+    console.log("You are a teenager")
+}
+else{
+    console.log("Enjoy your childhood!")
+}

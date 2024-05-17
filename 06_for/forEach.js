@@ -32,8 +32,8 @@ function upperCase (val, index, array){
     array[index] = val.toUpperCase()
 }
 
-names.forEach(upperCase)
-names.forEach(namedFunction)
+names.forEach(upperCase) //* converting values into uppercase
+names.forEach(namedFunction) //* prints
 
 console.log("***********************************")
 

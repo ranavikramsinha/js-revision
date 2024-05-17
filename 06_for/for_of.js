@@ -21,6 +21,8 @@ const obj1 = {
     location: "Bangalore",
 }
 
+console.log("name" in obj1) //* to check key's present or not in an object
+
 for (const key in obj1){
     console.log(`${key}: ${obj1[key]}`)
 }

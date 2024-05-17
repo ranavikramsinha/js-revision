@@ -23,3 +23,14 @@ function namedFunction(namewhatever){
 }
 
 names.forEach(namedFunction)
+
+console.log("***********************************")
+
+//* element, index, array
+
+function upperCase (val, index, array){
+    array[index] = val.toUpperCase()
+}
+
+names.forEach(upperCase)
+names.forEach(namedFunction)

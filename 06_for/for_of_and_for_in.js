@@ -65,3 +65,21 @@ for (const entrie of obj1Entries){
 // for (const entrie in obj2Entries){
 //     console.log(entrie)
 // }
+
+const obj2Keys = Object.keys(obj1)
+
+for (const key in obj2Keys){
+    console.log(obj2Keys[key])
+}
+
+const obj2Values = Object.values(obj1)
+
+for (const value in obj2Values){
+    console.log(obj2Values[value])
+}
+
+const obj2Entries = Object.entries(obj1)
+
+for (const entrie in obj2Entries){
+    console.log(obj2Entries[entrie])
+}

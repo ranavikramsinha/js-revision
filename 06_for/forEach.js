@@ -34,3 +34,30 @@ function upperCase (val, index, array){
 
 names.forEach(upperCase)
 names.forEach(namedFunction)
+
+console.log("***********************************")
+
+const users = [
+    {
+        userName: "Raja Babu",
+        age: 27,
+    },
+    {
+        userName: "Pankaj Pandey",
+        age: 27,
+    },
+    {
+        userName: "Rana Vikram Sinha",
+        age:24,
+    },
+]
+
+users.forEach((user) => {
+    console.log(user.userName)
+})
+
+console.log("***********************************")
+
+users.forEach((user) => {
+    console.log(user.age)
+})

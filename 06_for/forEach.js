@@ -1,4 +1,4 @@
-//* forEach => this method of Array instances executes a provided function once for each array element
+//* forEach => this method of Array instances executes a provided function once for each array element and forEach never return value's
 
 const names = ["Rana", "Raja", "Aryan", "Pankaj", "Rick"]
 

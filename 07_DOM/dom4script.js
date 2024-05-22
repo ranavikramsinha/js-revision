@@ -31,3 +31,19 @@ optAddElementWithColor("Rana", "Green")
 
 //* Edit Element
 
+const firstName = document.querySelector("li:nth-child(1)")
+const editFirstName = document.createElement("li")
+editFirstName.appendChild(document.createTextNode("RAJA BABU"))
+firstName.replaceWith(editFirstName)
+
+const secondName = document.querySelector("li:nth-child(2)")
+const editSecondName = document.createElement("li")
+editSecondName.style.color = "orange"
+editSecondName.appendChild(document.createTextNode("PANKAJ PANDEY"))
+secondName.replaceWith(editSecondName)
+
+
+//* Remove
+
+// const lastName = document.querySelector("li:last-child")
+// lastName.remove()

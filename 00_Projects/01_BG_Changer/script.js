@@ -22,22 +22,53 @@
 //     })
 // })
 
+// const buttons = document.querySelectorAll(".button")
+// const wholeBody = document.querySelector("body")
+
+// buttons.forEach((button) => {
+//     button.addEventListener("click", (event) => {
+//         if(event.target.id === "red"){
+//             wholeBody.style.backgroundColor = event.target.id
+//         }
+//         else if(event.target.id === "cyan"){
+//             wholeBody.style.backgroundColor = event.target.id
+//         }
+//         else if(event.target.id === "orange"){
+//             wholeBody.style.backgroundColor = event.target.id
+//         }
+//         else if(event.target.id === "brown"){
+//             wholeBody.style.backgroundColor = event.target.id
+//         }
+//     })
+// })
+
 const buttons = document.querySelectorAll(".button")
-const wholeBody = document.querySelector("body")
+console.log(buttons)
+const fullBody = document.querySelector("body")
 
 buttons.forEach((button) => {
+    console.log(button)
     button.addEventListener("click", (event) => {
         if(event.target.id === "red"){
-            wholeBody.style.backgroundColor = event.target.id
+            fullBody.style.backgroundColor = event.target.id
         }
         else if(event.target.id === "cyan"){
-            wholeBody.style.backgroundColor = event.target.id
+            fullBody.style.backgroundColor = event.target.id
         }
         else if(event.target.id === "orange"){
-            wholeBody.style.backgroundColor = event.target.id
+            fullBody.style.backgroundColor = event.target.id
         }
         else if(event.target.id === "brown"){
-            wholeBody.style.backgroundColor = event.target.id
+            fullBody.style.backgroundColor = event.target.id
         }
     })
+})
+
+const resets = document.querySelector(".reset")
+console.log(reset)
+
+resets.addEventListener("click", (event) => {
+    if(event.target.id === "reset"){
+        fullBody.style.backgroundColor = "#1f1f1f"
+    }
 })

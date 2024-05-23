@@ -65,7 +65,7 @@ buttons.forEach((button) => {
 })
 
 const resets = document.querySelector(".reset")
-console.log(reset)
+console.log(resets)
 
 resets.addEventListener("click", (event) => {
     if(event.target.id === "reset"){

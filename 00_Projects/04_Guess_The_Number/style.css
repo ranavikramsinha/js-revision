@@ -20,15 +20,16 @@ html {
     padding: 7px;
   }
   
-  button {
-    background-color: hsl(0, 0%, 8%);
+  .button {
+    background-color: hsl(0, 0%, 9%);
     color: hsl(0, 0%, 100%);
-    width: 250px;
-    height: 50px;
-    border-radius: 25px;
-    font-size: 30px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
     border-style: none;
-    margin-top: 30px;
+    margin-left: 125px;
+    padding-top: 12.5px
   }
   
   #guessSubmit {
@@ -41,7 +42,7 @@ html {
     border-style: none;
     margin-top: 50px;
   }
-  
+
   #guessField {
     color: hsl(0, 0%, 0%);
     width: 250px;
@@ -67,7 +68,7 @@ html {
     box-sizing: border-box;
     text-align: center;
     width: 450px;
-    height: 580px;
+    height: 800px;
     background-color: hsl(0, 0%, 28%);
     color: hsl(0, 0%, 100%);
     font-size: 25px;

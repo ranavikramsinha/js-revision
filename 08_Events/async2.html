@@ -38,18 +38,18 @@
         // console.log("Raja Babu", Date.now())
     }
 
-    let interValid = null
+    let startAndStopTimeNowAndPrintingName_setInterval = null
 
     document.querySelector("#stopButton").addEventListener("click", () => {
-        if(interValid !== null){
-            clearInterval(interValid)
-            interValid = null
+        if(startAndStopTimeNowAndPrintingName_setInterval !== null){
+            clearInterval(startAndStopTimeNowAndPrintingName_setInterval)
+            startAndStopTimeNowAndPrintingName_setInterval = null
         }
     })
 
     document.querySelector("#startButton").addEventListener("click", () => {
-        if(interValid === null){
-            interValid = setInterval(timeNow, 1000, "Raja Babu")
+        if(startAndStopTimeNowAndPrintingName_setInterval === null){
+            startAndStopTimeNowAndPrintingName_setInterval = setInterval(timeNow, 1000, "Raja Babu")
         }   
     })
 

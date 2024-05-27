@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+    <style>
+        .bg{
+            background-color: hsl(0, 0%, 12%);
+            color: hsl(0, 0%, 100%)
+        }
+    </style>
+</head>
+<body class="bg">
+    <h1>Rana Vikram Sinha</h1>
+    <button id="stopButton">Stop</button>
+
+<script>
+
+    // setInterval(() => {
+    //     console.log("Raja Babu")
+    // }, 1000)
+
+    // setTimeout(() => {
+    //     console.log("Raja Babu")
+    // }, 3000)
+
+    // const name1 = () => {
+    //     console.log("Raja Babu")
+    // }
+
+    // setTimeout(name1, 2000)
+
+    const name1 = () => {
+        console.log("Raja Babu")
+    }
+
+    const newName2InH2 = () => {
+        document.querySelector("h1").textContent = "Raja Babu"
+    }
+
+    const name2 = setTimeout(newName2InH2, 3000)
+
+     document.querySelector("#stopButton").addEventListener("click", () => {
+        clearTimeout(name2)
+        console.log("cleared setTimeout")
+     }) // after this you can stop setTimeout to get execute but keep this in mind that, stop button should be pressed before time constraints
+
+</script>
+
+</body>
+</html>

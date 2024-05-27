@@ -39,10 +39,10 @@
         document.querySelector("h1").textContent = "Raja Babu"
     }
 
-    const name2 = setTimeout(newName2InH2, 3000)
+    const stopNewNameInH2 = setTimeout(newName2InH2, 3000)
 
      document.querySelector("#stopButton").addEventListener("click", () => {
-        clearTimeout(name2)
+        clearTimeout(stopNewNameInH2)
         console.log("cleared setTimeout")
      }) // after this you can stop setTimeout to get execute but keep this in mind that, stop button should be pressed before time constraints
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async 2</title>
+    <style>
+        .bg{
+            background-color: hsl(0, 0%, 12%);
+            color: hsl(0, 0%, 100%)
+        }
+    </style>
+</head>
+<body class="bg">
+    <h1>Rana Vikram Sinha</h1>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+
+<script>
+
+    // setInterval(() => {
+    //     let time = new Date()
+    //     console.log("Raja Babu", time.toLocaleTimeString())
+    //     // console.log("Raja Babu", Date.now())
+    // },1000)
+
+    // const timeNow = (parameter) => {
+    //     let time = new Date()
+    //     console.log(parameter, time.toLocaleTimeString())
+    //     // console.log("Raja Babu", Date.now())
+    // }
+
+    // setInterval(timeNow, 1000, "Raja Babu")
+
+    const timeNow = (parameter) => {
+        let time = new Date()
+        console.log(parameter, time.toLocaleTimeString())
+        // console.log("Raja Babu", Date.now())
+    }
+
+    let interValid = null
+
+    document.querySelector("#stopButton").addEventListener("click", () => {
+        if(interValid !== null){
+            clearInterval(interValid)
+            interValid = null
+        }
+    })
+
+    document.querySelector("#startButton").addEventListener("click", () => {
+        if(interValid === null){
+            interValid = setInterval(timeNow, 1000, "Raja Babu")
+        }   
+    })
+
+
+</script>
+
+</body>
+</html>

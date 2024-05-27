@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="japan"></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="river"></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="owl" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="prayer"></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+        
+   </div>
+
+   <script>
+    // document.getElementById("japan").onclick = function (){
+    //     alert("japan clicked")
+    // }
+
+// <!--* 1st shown = clicked inside ul & 2nd shown = japan clicked (by giving true)-->
+    // document.getElementById("images").addEventListener("click", () => {
+    //     console.log("clicked inside ul")
+    // },true)
+
+    // document.getElementById("japan").addEventListener("click", () => {
+    //     console.log("japan clicked")
+    // },true)
+
+// <!--* 1st shown = japan clicked & 2nd shown = clicked inside ul (by giving false & also it's default)-->
+    // document.getElementById("images").addEventListener("click", () => {
+    //     console.log("clicked inside ul")
+    // },false)
+
+    // document.getElementById("japan").addEventListener("click", (event) => {
+    //     console.log("japan clicked")
+    // },false)
+
+    // document.getElementById("images").addEventListener("click", () => {
+    //     console.log("clicked inside ul")
+    // },{capture: true})
+
+    // document.getElementById("japan").addEventListener("click", (event) => {
+    //     console.log("japan clicked")
+    // },{capture: true})
+
+    // document.getElementById("japan").addEventListener("click", (event) => {
+    //     console.log("japan clicked")
+    // },{once: true}) 
+
+    document.getElementById("google").addEventListener("click", (event) => {
+        event.preventDefault()
+        event.stopPropagation()
+        // console.log("google clicked")
+    })
+
+    document.querySelector("#images").addEventListener("click", (event) => {
+        console.log(event.target)
+        console.log(event.target.tagName)
+
+        if(event.target.tagName === 'IMG'){
+            let removeImg = event.target.parentNode
+            // removeImg.remove()
+            removeImg.parentNode.removeChild(removeImg) // li to ul and remove child of ul(remove image in this case)
+        }
+
+        // let removeImg = event.target.parentNode
+        // removeImg.remove()
+    })
+
+</script>
+
+</body>
+</html>

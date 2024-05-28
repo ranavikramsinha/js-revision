@@ -31,20 +31,30 @@
 
     // setTimeout(name1, 2000)
 
-    const name1 = () => {
-        console.log("Raja Babu")
+    // const name1 = () => {
+    //     console.log("Raja Babu")
+    // }
+
+    // const newName2InH2 = () => {
+    //     document.querySelector("h1").textContent = "Raja Babu"
+    // }
+
+    // const stopNewNameInH2 = setTimeout(newName2InH2, 3000)
+
+    //  document.querySelector("#stopButton").addEventListener("click", () => {
+    //     clearTimeout(stopNewNameInH2)
+    //     console.log("cleared setTimeout")
+    //  }) // after this you can stop setTimeout to get execute but keep this in mind that, stop button should be pressed before time constraints
+
+    const name3 = () => {
+        document.querySelector("h1").textContent = "Pankaj Kumar"
     }
 
-    const newName2InH2 = () => {
-        document.querySelector("h1").textContent = "Raja Babu"
-    }
+    const timeOut = setTimeout(name3, 2000)
 
-    const stopNewNameInH2 = setTimeout(newName2InH2, 3000)
-
-     document.querySelector("#stopButton").addEventListener("click", () => {
-        clearTimeout(stopNewNameInH2)
-        console.log("cleared setTimeout")
-     }) // after this you can stop setTimeout to get execute but keep this in mind that, stop button should be pressed before time constraints
+    document.querySelector("#stopButton").addEventListener("click", () => {
+        clearTimeout(timeOut)
+    })
 
 </script>
 

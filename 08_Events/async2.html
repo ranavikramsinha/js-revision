@@ -32,25 +32,45 @@
 
     // setInterval(timeNow, 1000, "Raja Babu")
 
-    const timeNow = (parameter) => {
-        let time = new Date()
-        console.log(parameter, time.toLocaleTimeString())
-        // console.log("Raja Babu", Date.now())
+    // const timeNow = (parameter) => {
+    //     let time = new Date()
+    //     console.log(parameter, time.toLocaleTimeString())
+    //     // console.log("Raja Babu", Date.now())
+    // }
+
+    // let startAndStopTimeNowAndPrintingName_setInterval = null
+
+    // document.querySelector("#stopButton").addEventListener("click", () => {
+    //     if(startAndStopTimeNowAndPrintingName_setInterval !== null){
+    //         clearInterval(startAndStopTimeNowAndPrintingName_setInterval)
+    //         startAndStopTimeNowAndPrintingName_setInterval = null
+    //     }
+    // })
+
+    // document.querySelector("#startButton").addEventListener("click", () => {
+    //     if(startAndStopTimeNowAndPrintingName_setInterval === null){
+    //         startAndStopTimeNowAndPrintingName_setInterval = setInterval(timeNow, 1000, "Raja Babu")
+    //     }   
+    // })
+
+    const timeNow = (name) => {
+        let timing = new Date()
+        console.log(name, timing.toLocaleTimeString())
     }
 
-    let startAndStopTimeNowAndPrintingName_setInterval = null
+    let valid = null
 
-    document.querySelector("#stopButton").addEventListener("click", () => {
-        if(startAndStopTimeNowAndPrintingName_setInterval !== null){
-            clearInterval(startAndStopTimeNowAndPrintingName_setInterval)
-            startAndStopTimeNowAndPrintingName_setInterval = null
+    document.querySelector("#startButton").addEventListener("click", () => {
+        if(valid === null){
+            valid = setInterval(timeNow, 1000, "Rana Vikram Sinha")
         }
     })
 
-    document.querySelector("#startButton").addEventListener("click", () => {
-        if(startAndStopTimeNowAndPrintingName_setInterval === null){
-            startAndStopTimeNowAndPrintingName_setInterval = setInterval(timeNow, 1000, "Raja Babu")
-        }   
+    document.querySelector("#stopButton").addEventListener("click", () => {
+        if(valid !== null){
+            clearInterval(valid)
+            valid = null
+        }
     })
 
 

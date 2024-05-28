@@ -3,31 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event KeyCodes</title>
+    <title>KeyPress and KeyCode</title>
     <style>
       table,
       th,
       td {
-        border: 1px solid hsl(0, 0%, 91%);
+        border: 1px solid hsl(0, 100%, 50%);
+        border-collapse: collapse;
       }
       .project {
-        background-color: hsl(0, 0%, 11%);
-        color: hsl(0, 0%, 100%);
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         height: 100vh;
+        color: hsl(0, 0%, 100%)
       }
 
       .color {
-        color: hsl(208, 100%, 97%);
+        color: hsl(115, 100%, 50%);
         display: flex;
         flex-direction: row;
       }
     </style>
   </head>
-  <body>
+  <body style = "background-color:hsl(0, 0%, 11%)">
     <nav>
         <a href="/" aria-current="page">Home</a>
         <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
@@ -36,7 +36,7 @@
     </nav>
     <div class="project">
       <div id="insert">
-        <div class="key">Press the key and watch magic</div>
+        <div class="key">Press the key and see which key pressed with their code</div>
       </div>
     </div>
 

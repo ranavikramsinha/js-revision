@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML API Request</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .card{
+            width: 400px;
+            background-color: rgb(94, 78, 78);
+            border: 7px solid green;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            border: 7px solid grey
+        }
+
+        body{
+            display: flex;   
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body style="background-color: #212121; color: #ffffff">
+
+    
+<script>
+    const body = document.querySelector("body")
+    body.innerHTML = `<button class="showButton" >Show</button>`
+
+    document.querySelector(".showButton").addEventListener("click", () => {
+        const requestUrl = "https://api.github.com/users/ranavikramsinha"
+        const xhr = new XMLHttpRequest()
+        xhr.open("GET", requestUrl)
+        // console.log("Reached here")
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState)
+            if(xhr.readyState === 4){
+                body.innerHTML = `<div class="card"><p>Profile Pic:</p>
+                                <div><img width = "150px" src="https://avatars.githubusercontent.com/u/168851099?v=4"/></div>
+                                <p>Followers:</p>
+                                <div>${JSON.parse(this.responseText).followers}</div></div>`
+                // console.log(JSON.parse(this.responseText).followers)
+            }
+        }
+    // console.log(xhr.readyState)
+    xhr.send()
+    })
+
+</script>
+
+</body>
+</html>

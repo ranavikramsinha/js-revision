@@ -14,13 +14,13 @@ function orderCake(venue, callback) {
   }, 1000);
 }
 
-// function sendInvitations(cake, callback) {
-//   //* Simulate an asynchronous operation
-//   setTimeout(() => {
-//     console.log('Invitations sent with', cake);
-//     callback('invitations');
-//   }, 1000);
-// }
+function sendInvitations(cake, callback) {
+  //* Simulate an asynchronous operation
+  setTimeout(() => {
+    console.log('Invitations sent with', cake);
+    callback('invitations');
+  }, 1000);
+}
 
 function decorateVenue(invitations, callback) {
   //* Simulate an asynchronous operation

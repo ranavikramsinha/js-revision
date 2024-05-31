@@ -186,9 +186,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
 })
 
 fetch("https://jsonplaceholder.typicode.com/users")
-.then((response) => {
-    return response.json()
-})
+.then(response => response.json()
+)
 .then((data) => {
     console.log(data)
 })
@@ -206,3 +205,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
 .catch((error) => {
     console.log("Error")
 })
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+.then(respone => respone.json()) //* implicit return of the expression
+.then(json => console.log(json))

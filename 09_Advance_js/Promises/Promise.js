@@ -172,6 +172,8 @@ absorbPromise5AsyncHandleError()
 
 //* fetch().then().catch().finally()
 
+//*  this chaining of .then() methods ensures that the subsequent actions are executed only after the preceding(means happening before time) asynchronous operation has completed successfully
+
 fetch("https://jsonplaceholder.typicode.com/users")
 .then((response) => {
     return response.json()

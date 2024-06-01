@@ -43,7 +43,7 @@ function makeHttpRequest(method, url){
 
 makeHttpRequest("GET", "https://dummyjson.com/users")
 .then((usersData) => makeHttpRequest("GET", `https://dummyjson.com/posts/user/${usersData.users[0].id}`))
-// .then((postsData) => makeHttpRequest('GET', `https://dummyjson.com/comments/post/${postsData.posts[0].id}`))
+.then((postsData) => makeHttpRequest('GET', `https://dummyjson.com/comments/post/${postsData.posts[0].id}`))
 .then((commentsData) => makeHttpRequest('GET', `https://dummyjson.com/users/${commentsData.comments[0].user.id}`))
 .then((commentsUserData) => console.log(commentsUserData))
 .catch((err) => console.log(err))

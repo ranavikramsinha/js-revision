@@ -1874,3 +1874,5 @@ const usersData = [
 
   export const getSecondUserData = (() => usersData[1])
   export const getThirdUserData = (() => usersData[2])
+
+  console.log("Hello2")

@@ -50,17 +50,21 @@ console.log(user2.getFullName?.())
 
 console.log("******************************")
 
-if(user2.address){
-    if(user2.address?.city){
-        console.log(user2.address.city)
-    }
-    else {
-        console.log(user2.address?.city ?? "City is not available")
-    }
-}
-else {
-    console.log("Address is not available")
-}
+// if(user2.address){
+//     if(user2.address?.city){
+//         console.log(user2.address.city)
+//     }
+//     else {
+//         console.log(user2.address?.city ?? "City is not available")
+//     }
+// }
+// else {
+//     console.log(user2?.address ?? "Address is not available")
+// }
+
+//* upper if and else can be written as (look below)
+
+console.log(user2.address?.city ?? "Address is not available or City is not available")
 
 console.log("******************************")
 

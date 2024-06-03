@@ -6,7 +6,7 @@ let faang = {
 }
 
 let engineer = Object.create(faang, {
-    name: {value: "Rana Vikram Sinha",
+    empName: {value: "Rana Vikram Sinha",
            // writable: true, //* if true, for changing
            // enumerable: true, //* if true, for printing when console.log(engineer)
            // configurable: true //* if true, the property can be deleted and these attributes can be modified
@@ -19,6 +19,7 @@ let engineer = Object.create(faang, {
     }
 })
 
+engineer.empName = "Raja Babu"
 engineer.taskAssigned = 5 //* When creating properties using Object.create, you need to provide a descriptor object for each property. This object can specify value, writable, enumerable, and configurable attributes.
  
 //* value: The value associated with the property (in this case, 2)
@@ -27,9 +28,12 @@ engineer.taskAssigned = 5 //* When creating properties using Object.create, you 
 //* configurable: If true, the property can be deleted and these attributes can be modified
 
 console.log(engineer.name)
+engineer.salary()
+console.log(engineer.empName)
 console.log(engineer.taskAssigned)
-console.log(engineer)
+console.log(engineer) //* enumerable: false or default enumerable is false if not defined in object.create
 
+console.log("**********************************************")
 
 let faangg = {
     name: "google",
@@ -39,7 +43,7 @@ let faangg = {
 }
 
 let engineerr = Object.create(faang, {
-    name: {value: "Rana Vikram Sinha",
+    empName: {value: "Rana Vikram Sinha",
            writable: true, //* if true, for changing
            enumerable: true, //* if true, for printing when console.log(engineer)
            configurable: true //* if true, the property can be deleted and these attributes can be modified
@@ -52,8 +56,11 @@ let engineerr = Object.create(faang, {
     }
 })
 
-engineerr.name = "Raja Babu"
+engineerr.empName = "Raja Babu"
 engineerr.taskAssigned = 5
 
+console.log(engineerr.name)
+engineerr.salary()
+console.log(engineerr.empName)
 console.log(engineerr.taskAssigned)
 console.log(engineerr)

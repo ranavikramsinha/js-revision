@@ -6,6 +6,11 @@ let faang = {
 }
 
 let engineer = Object.create(faang, {
+    name: {value: "Rana Vikram Sinha",
+           // writable: true, //* if true, for changing
+           // enumerable: true, //* if true, for printing when console.log(engineer)
+           // configurable: true //* if true, the property can be deleted and these attributes can be modified
+    },
     taskAssigned: {
         value: 2,
         // writable: true,
@@ -21,7 +26,9 @@ engineer.taskAssigned = 5 //* When creating properties using Object.create, you 
 //* enumerable: If true, the property will be listed during enumeration of the object's properties
 //* configurable: If true, the property can be deleted and these attributes can be modified
 
+console.log(engineer.name)
 console.log(engineer.taskAssigned)
+console.log(engineer)
 
 
 let faangg = {
@@ -32,6 +39,11 @@ let faangg = {
 }
 
 let engineerr = Object.create(faang, {
+    name: {value: "Rana Vikram Sinha",
+           writable: true, //* if true, for changing
+           enumerable: true, //* if true, for printing when console.log(engineer)
+           configurable: true //* if true, the property can be deleted and these attributes can be modified
+    },
     taskAssigned: {
         value: 2,
         writable: true,
@@ -40,6 +52,8 @@ let engineerr = Object.create(faang, {
     }
 })
 
+engineerr.name = "Raja Babu"
 engineerr.taskAssigned = 5
 
 console.log(engineerr.taskAssigned)
+console.log(engineerr)

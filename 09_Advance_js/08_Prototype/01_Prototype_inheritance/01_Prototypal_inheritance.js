@@ -64,3 +64,24 @@ engineerr.salary()
 console.log(engineerr.empName)
 console.log(engineerr.taskAssigned)
 console.log(engineerr)
+
+console.log("**********************************************")
+
+let faanggg = {
+    name: "google",
+    salary: function() {
+        console.log("600k salary")
+    },
+}
+
+let engineerrr = {
+    empId: 12212,
+    task: function(){
+        console.log("task assigned")
+    }
+}
+
+engineerrr.__proto__ = faanggg
+
+console.log(engineerrr)
+engineerrr.salary()

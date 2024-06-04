@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure DOM Example</title>
+</head>
+<body style="background-color: hsl(0, 0%, 12%); color: hsl(0, 0%, 100%)">
+    <button id="counterButton">Click me</button>
+    <p id="displayCounter">0</p>
+
+    <script>
+        function createCounter() {
+            let count = 0
+            return function() {
+                count += 1
+                return count
+            }
+        }
+
+        const counter = createCounter()
+
+        document.getElementById('counterButton').addEventListener('click', function() {
+            const newCount = counter()
+            document.getElementById('displayCounter').textContent = newCount
+        })
+    </script>
+</body>
+</html>

@@ -7,6 +7,9 @@ function outer(x){
 const result = outer(2)
 console.log(result(5)) //* 7
 
+// const result = outer(2)(5)
+// console.log(result) //* 7
+
 function loadBalance(){
     let userBalance = 100
     console.log(userBalance)

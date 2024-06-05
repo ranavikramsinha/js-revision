@@ -27,14 +27,17 @@
 // const arr4 = new Array(11,12,14,15,16)
 // console.log(arr4)
 
-// const arr5 = new Array("Rana","Vikram","Sinha","Raja","Babu")
+const arr5 = new Array("Rana","Vikram","Sinha","Raja","Babu")
 // // arr5.pop() //* pop out the last element of an array
 // console.log(arr5)
 // arr5.unshift("Aryan",1,5) //* add elements at the start of an array
 // console.log(arr5)
 // arr5.shift() //* shift one element in an array
+// console.log(arr5) //* [ 'Vikram', 'Sinha', 'Raja', 'Babu' ]
 // arr5.shift() //* shift one element in an array
+// console.log(arr5) //* [ 'Sinha', 'Raja', 'Babu' ]
 // arr5.shift() //* shift one element in an array
+// console.log(arr5) //* [ 'Raja', 'Babu' ]
 // console.log(arr5)
 // console.log(arr5.includes("Rana"))
 // console.log(arr5.includes("Aryan"))
@@ -55,7 +58,7 @@
 // console.log(arr5.slice(0, 4)) //* prints from index 0 position to index 3 position
 // console.log(arr5) //* after using slice, our original arr5 doesn't get manipulate
 
-const arr5 = new Array("Rana","Vikram","Sinha","Raja","Babu")
+// const arr5 = new Array("Rana","Vikram","Sinha","Raja","Babu")
 // const arr8 = arr5.splice(0, 3) //* prints upto 3 elements of an array from index 0 position 
 // console.log(arr8)
 // console.log(arr5) //* after using splice, our original arr5 does get manipulate
@@ -76,6 +79,6 @@ const arr5 = new Array("Rana","Vikram","Sinha","Raja","Babu")
 // console.log(arr8)
 // console.log(arr5) //* after using splice, our original arr5 does get manipulate
 
-const arr8 = arr5.splice(0, 2, "Aryan", "Rick") //* Remove 2 elements from index 0 and insert Aryan and Rick
-console.log(arr8)
-console.log(arr5) //* after using splice, our original arr5 does get manipulate, added/insert Aryan and Rick and Rana and Vikram get removed
+// const arr8 = arr5.splice(0, 2, "Aryan", "Rick") //* Remove 2 elements from index 0 and insert Aryan and Rick
+// console.log(arr8)
+// console.log(arr5) //* after using splice, our original arr5 does get manipulate, added/insert Aryan and Rick and Rana and Vikram get removed
